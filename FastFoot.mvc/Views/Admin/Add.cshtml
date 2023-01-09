@@ -1,0 +1,27 @@
+﻿@{
+
+}
+@model Foot
+<form asp-controller="admin" asp-action="Add" method="post">
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+        <input asp-for="Name" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group">
+        <span class="input-group-text">With textarea</span>
+        <textarea asp-for="Description" class="form-control" aria-label="With textarea"></textarea>
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Price</span>
+        <input asp-for="Price" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+        <input asp-for=Image type="text" class="form-control" id="inputGroupFile02">
+        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+    </div>
+    <div class="input-group mb-3">
+        <button type="submit" class="btn btn-success me-5">
+            Save
+        </button>
+    </div>
+</form>
